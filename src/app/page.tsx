@@ -1,65 +1,175 @@
-import Image from "next/image";
+"use client";
+
+import Navbar from "@/components/sections/Navbar";
+import Hero from "@/components/sections/Hero";
+import CategorySection from "@/components/sections/CategorySection";
+import WhatsAppButton from "@/components/ui/WhatsAppButton";
+import Footer from "@/components/sections/Footer";
+import { Phone, MapPin, Clock, ArrowRight } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
+import { useState, useEffect } from "react";
+import LoadingScreen from "@/components/ui/LoadingScreen";
+import FloatingContact from "@/components/ui/FloatingContact";
 
 export default function Home() {
+  const [isLoading, setIsLoading] = useState(true);
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+    <AnimatePresence mode="wait">
+      {isLoading ? (
+        <LoadingScreen key="loader" onComplete={() => setIsLoading(false)} />
+      ) : (
+        <motion.main 
+          key="content"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1 }}
+          className="relative flex-1 bg-mesh"
+        >
+          <Navbar />
+          <Hero />
+      
+      {/* Quick Contact Bar */}
+      <div className="relative z-20 mt-10 md:-mt-24 max-w-7xl mx-auto px-4">
+        <div className="glass p-6 md:p-8 rounded-[2rem] md:rounded-[2.5rem] grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 shadow-2xl border-white/5">
+          {[
+            { icon: Phone, label: "Service Client", value: "01 23 45 67 89", size: "text-lg" },
+            { icon: MapPin, label: "Localisation", value: "33 Route de Saint-Leu, 93800 Épinay", size: "text-[10px]" },
+            { icon: Clock, label: "Ouverture", value: "Lun-Sam: 09h - 19h", size: "text-lg" },
+          ].map((item, i) => (
+            <motion.div 
+              key={item.label}
+              whileHover={{ y: -5 }}
+              className="flex items-center space-x-4 md:space-x-5 text-white p-3 md:p-4 rounded-2xl bg-white/5 border border-white/5"
             >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+              <div className="bg-racing-red p-3 md:p-4 rounded-xl md:rounded-2xl shadow-lg shadow-racing-red/20">
+                <item.icon className="w-5 h-5 md:w-6 md:h-6" />
+              </div>
+              <div>
+                <p className="text-[8px] md:text-[10px] text-white/40 uppercase font-black tracking-widest mb-1">{item.label}</p>
+                <p className={`font-display font-black ${item.size} italic text-glow`}>{item.value}</p>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+
+
+      <CategorySection />
+
+      {/* Services Section */}
+      <section className="py-32 relative overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 relative z-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
             >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+              <span className="text-racing-red font-black uppercase tracking-[0.3em] text-xs mb-6 block italic">Nos Services Experts</span>
+              <h2 className="text-5xl md:text-6xl font-display font-black text-white mb-8 uppercase italic leading-[0.95]">
+                PLUS QU'UN GARAGE, <br /><span className="text-gradient">VOTRE PARTENAIRE.</span>
+              </h2>
+              <p className="text-white/50 mb-10 text-xl leading-relaxed font-medium">
+                Pôle Position 93 redéfinit l'entretien deux-roues avec une précision chirurgicale et une passion sans limite.
+              </p>
+              <div className="space-y-6 mb-12">
+                {[
+                  "Changement de pneus (Neufs & Occasion)",
+                  "Entretien complet et système de freinage",
+                  "Remplacement de pare-brise & bulles",
+                  "Vente de pièces détachées d'origine",
+                ].map((service) => (
+                  <div key={service} className="flex items-center space-x-4 text-white group cursor-default">
+                    <div className="w-2 h-2 bg-racing-red rounded-full group-hover:scale-150 transition-transform shadow-[0_0_10px_#E31837]" />
+                    <span className="font-bold text-lg group-hover:text-racing-red transition-colors italic uppercase tracking-tight">{service}</span>
+                  </div>
+                ))}
+              </div>
+              <button className="relative group overflow-hidden px-10 py-5 rounded-full bg-white text-carbon-black font-black uppercase italic tracking-widest transition-all hover:pr-14 shadow-xl">
+                <span className="relative z-10">DÉCOUVRIR NOS SERVICES</span>
+                <ArrowRight className="absolute right-6 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-all w-6 h-6" />
+              </button>
+            </motion.div>
+            
+            <motion.div 
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              className="relative group"
+            >
+              <div className="absolute -inset-4 bg-gradient-to-r from-racing-red to-amber-gold rounded-[3rem] blur-2xl opacity-20 group-hover:opacity-40 transition-opacity duration-700" />
+              <div className="relative h-[600px] rounded-[3rem] overflow-hidden glass-red flex items-center justify-center border-white/5">
+                 <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-80 -scale-x-100 group-hover:scale-x-[-1.1] group-hover:scale-y-[1.1] transition-all duration-1000" />
+                 <span className="relative z-10 text-white/10 font-display font-black decor-text italic select-none">93</span>
+                 <div className="absolute inset-0 bg-gradient-to-t from-carbon-black via-transparent to-white/5" />
+                 <div className="absolute bottom-10 left-10 right-10 p-8 glass rounded-[2rem]">
+                    <p className="text-white font-black text-2xl uppercase italic mb-2">Atelier Haute Performance</p>
+                    <p className="text-white/60 text-sm font-medium">Équipement de pointe et expertise technique certifiée.</p>
+                 </div>
+              </div>
+            </motion.div>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </section>
+
+      {/* Trust Section - L'Excellence en Chiffres */}
+      <section className="py-32 relative overflow-hidden">
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-[0.03] select-none pointer-events-none">
+          <span className="font-display font-black decor-text italic">EXCELLENCE</span>
         </div>
-      </main>
-    </div>
+
+        <div className="max-w-7xl mx-auto px-4 text-center relative z-10">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            <h3 className="text-4xl md:text-6xl font-display font-black text-white mb-24 uppercase italic tracking-tighter leading-none">
+              L'EXCELLENCE <br className="md:hidden" /> EN <span className="text-gradient">CHIFFRES</span>
+            </h3>
+          </motion.div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+            {[
+              { label: "Clients Satisfaits", value: "10k+", color: "from-racing-red to-racing-red-hover" },
+              { label: "Véhicules Vendus", value: "5k+", color: "from-amber-gold to-yellow-600" },
+              { label: "Années d'Expérience", value: "15+", color: "from-white to-gray-400" },
+              { label: "Points de Contrôle", value: "50+", color: "from-racing-red to-amber-gold" },
+            ].map((stat, i) => (
+              <motion.div 
+                key={stat.label}
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ delay: i * 0.1 }}
+                viewport={{ once: true }}
+                whileHover={{ y: -10, scale: 1.02 }}
+                className="relative p-10 glass rounded-[2.5rem] border-white/5 group overflow-hidden"
+              >
+                <div className="absolute -inset-2 bg-gradient-to-br from-racing-red/20 via-transparent to-amber-gold/20 opacity-0 group-hover:opacity-100 transition-opacity blur-xl" />
+                
+                <p className={`text-6xl md:text-8xl font-display font-black mb-4 italic bg-gradient-to-br ${stat.color} bg-clip-text text-transparent select-none drop-shadow-2xl`}>
+                  {stat.value}
+                </p>
+                <p className="text-white font-black uppercase text-[10px] tracking-[0.4em] opacity-40 group-hover:opacity-100 transition-opacity">
+                  {stat.label}
+                </p>
+                
+                {/* Decorative corner accent */}
+                <div className="absolute top-0 right-0 w-16 h-16 bg-gradient-to-bl from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+
+
+      <WhatsAppButton />
+      <FloatingContact />
+      <Footer />
+        </motion.main>
+      )}
+    </AnimatePresence>
   );
 }
