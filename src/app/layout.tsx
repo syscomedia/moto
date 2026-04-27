@@ -13,6 +13,7 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://poleposition93.fr"),
   title: {
     default: "Pôle Position 93 | Vente Moto, Scooter & Quad à Épinay-sur-Seine",
     template: "%s | Pôle Position 93",
@@ -36,6 +37,10 @@ export const metadata: Metadata = {
       },
     ],
   },
+  icons: {
+    icon: "/icoa.png?v=1",
+    apple: "/icoa.png?v=1",
+  },
 };
 
 export default function RootLayout({
@@ -48,6 +53,10 @@ export default function RootLayout({
       lang="fr"
       className={`${inter.variable} ${outfit.variable} h-full antialiased`}
     >
+      <head>
+        <link rel="icon" href="/icoa.png?v=1" />
+        <link rel="apple-touch-icon" href="/icoa.png?v=1" />
+      </head>
       <body className="min-h-full flex flex-col font-sans">
         {children}
       </body>
