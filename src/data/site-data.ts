@@ -95,9 +95,9 @@ export const products: Product[] = [
     image: "/suzuki-gsxr-k10.png",
     images: [
       "/suzuki-gsxr-k10.png",
-      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1558363129-c284f47e9356?auto=format&fit=crop&q=80"
+      "/gs1.png",
+      "/gs2.png",
+      "/gs3.png"
     ],
     features: ["Moteur 1000cc", "S-DMS (Suzuki Drive Mode Selector)", "Freins Tokico", "Échappement titane"]
   },
