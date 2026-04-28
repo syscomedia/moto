@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export default function WhatsAppButton() {
   const phoneNumber = "33123456789"; // Example
-  const message = "Bonjour Pôle Position 93, j'aimerais avoir des renseignements sur vos véhicules.";
+  const message = "Bonjour SPEED MOTO, j'aimerais avoir des renseignements sur vos véhicules.";
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
   return (

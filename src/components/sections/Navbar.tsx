@@ -42,8 +42,8 @@ export default function Navbar() {
         {/* Logo */}
         <Link href="/" className="flex items-center space-x-2 group">
           <span className="text-lg md:text-3xl font-display font-black tracking-tighter italic whitespace-nowrap">
-            <span className="text-racing-red group-hover:text-white transition-colors">PÔLE</span>
-            <span className="text-white group-hover:text-racing-red transition-colors"> POSITION 93</span>
+            <span className="text-racing-red group-hover:text-white transition-colors">SPEED</span>
+            <span className="text-white group-hover:text-racing-red transition-colors"> MOTO</span>
           </span>
         </Link>
 

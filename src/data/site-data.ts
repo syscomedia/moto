@@ -5,6 +5,7 @@ export interface Product {
   price: number;
   description: string;
   image: string;
+  images?: string[];
   features: string[];
 }
 
@@ -19,10 +20,10 @@ export interface Category {
 export const categories: Category[] = [
   {
     id: "1",
-    name: "Moto Scooter",
-    slug: "moto-scooter",
-    description: "Le parfait équilibre entre puissance et praticité urbaine.",
-    image: "/scooter-250.jpg"
+    name: "T-max",
+    slug: "t-max",
+    description: "Le roi des maxi-scooters, alliant puissance sportive et confort premium.",
+    image: "/tmax-560.png"
   },
   {
     id: "2",
@@ -33,72 +34,89 @@ export const categories: Category[] = [
   },
   {
     id: "3",
-    name: "Moto Cross",
-    slug: "moto-cross",
-    description: "Pour les passionnés de sensations fortes et de hors-piste.",
-    image: "/cross-450.jpg"
+    name: "Suzuki GSX-R",
+    slug: "suzuki-gsxr",
+    description: "L'adrénaline pure sur deux roues. La légende des circuits, disponible pour la route.",
+    image: "/suzuki-gsxr-k10.png"
   },
   {
     id: "4",
-    name: "Scooter 750 Standard",
-    slug: "scooter-750-standard",
-    description: "Performance et confort pour vos longs trajets.",
-    image: "/hero_motorcycle_showroom.png"
+    name: "Pièces Détachées",
+    slug: "pieces-detachees",
+    description: "Large choix de pièces toutes marques : carénages, moteurs, optiques, et plus encore.",
+    image: "/piece.jpg"
   },
   {
     id: "5",
-    name: "Scooter 750 Premium",
-    slug: "scooter-750-premium",
-    description: "Le summum du luxe et de la technologie sur deux roues.",
-    image: "/hero_motorcycle_showroom.png"
+    name: "Export & Occasions",
+    slug: "export-occasions",
+    description: "Scooters d'occasions et pièces disponibles pour l'export avec carte grise ou RSV.",
+    image: "/export.jpg"
   }
 ];
 
 export const products: Product[] = [
   {
     id: "p1",
-    name: "Moto Scooter Sport 250",
-    category: "moto-scooter",
-    price: 25000,
-    description: "Un scooter agile et puissant pour la ville.",
-    image: "/scooter-250.jpg",
-    features: ["Moteur 250cc", "ABS de série", "Éclairage LED", "Grand coffre"]
+    name: "Yamaha T-max 560",
+    category: "t-max",
+    price: 13500,
+    description: "Le maxi-scooter de référence, agile et ultra-performant.",
+    image: "/tmax-560.png",
+    images: [
+      "/tmax-animation.gif",
+      "/tmax-560.png",
+      "/t2.png",
+      "/t1.png"
+    ],
+    features: ["Moteur 560cc", "Écran TFT 7\"", "ABS & TCS", "Smart Key"]
   },
   {
     id: "p2",
-    name: "Quad All-Terrain 4x4",
+    name: "Quad",
     category: "quad",
     price: 30000,
     description: "Prêt pour toutes les aventures, peu importe le terrain.",
     image: "/quad-4x4.jpg",
+    images: [
+      "/quad-4x4.jpg",
+      "/q1.png",
+      "/q2.png",
+      "/q3.png"
+    ],
     features: ["Transmission 4x4", "Treuil électrique", "Suspensions renforcées"]
   },
   {
     id: "p3",
-    name: "Pro Cross 450",
-    category: "moto-cross",
-    price: 35000,
-    description: "La machine ultime pour le motocross de compétition.",
-    image: "/cross-450.jpg",
-    features: ["Moteur haute performance", "Châssis ultra-léger", "Pneus racing"]
+    name: "Suzuki GSX-R 1000 K10",
+    category: "suzuki-gsxr",
+    price: 8500,
+    description: "Une machine de légende, performance brute et maniabilité exceptionnelle.",
+    image: "/suzuki-gsxr-k10.png",
+    images: [
+      "/suzuki-gsxr-k10.png",
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1558363129-c284f47e9356?auto=format&fit=crop&q=80"
+    ],
+    features: ["Moteur 1000cc", "S-DMS (Suzuki Drive Mode Selector)", "Freins Tokico", "Échappement titane"]
   },
   {
     id: "p4",
-    name: "GT Max 750 Standard",
-    category: "scooter-750-standard",
-    price: 75000,
-    description: "Le confort d'un GT avec la puissance d'une moto.",
-    image: "/hero_motorcycle_showroom.png",
-    features: ["Moteur bicylindre", "Bulle réglable", "Keyless start"]
+    name: "Catalogue Pièces Toutes Marques",
+    category: "pieces-detachees",
+    price: 0,
+    description: "Consultez notre stock de pièces pour Honda, Yamaha, Suzuki, Piaggio, et bien d'autres.",
+    image: "/piece.jpg",
+    features: ["Fourches & Carénages", "Moteurs & Échappements", "Selles & Top Case", "Visières & Bulles"]
   },
   {
     id: "p5",
-    name: "GT Max 750 Limited Gold",
-    category: "scooter-750-premium",
-    price: 95000,
-    description: "L'édition limitée avec finitions premium et technologies de pointe.",
-    image: "/hero_motorcycle_showroom.png",
-    features: ["Finitions Or", "Selle chauffante", "Connectivité smartphone", "Échappement sport"]
+    name: "Service Export International",
+    category: "export-occasions",
+    price: 0,
+    description: "Solutions d'exportation complètes pour scooters et pièces détachées.",
+    image: "/export.jpg",
+    features: ["Cartes Grises incluses", "Dossiers RSV", "Logistique Export", "Tarifs préférentiels"]
   }
 ];
-

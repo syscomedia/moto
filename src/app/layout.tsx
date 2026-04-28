@@ -13,27 +13,27 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://poleposition93.fr"),
+  metadataBase: new URL("https://speedmoto.fr"),
   title: {
-    default: "Pôle Position 93 | Vente Moto, Scooter & Quad à Épinay-sur-Seine",
-    template: "%s | Pôle Position 93",
+    default: "SPEED MOTO | Vente Moto, Scooter & Quad à Épinay-sur-Seine",
+    template: "%s | SPEED MOTO",
   },
-  description: "Pôle Position 93 (Speed Moto Pièces) : Vente de motos, scooters, quads neufs et d'occasion. Entretien, pneus, pare-brise et pièces détachées à Épinay-sur-Seine (93).",
-  keywords: ["moto", "scooter", "quad", "moto cross", "scooter 750", "pneu moto", "entretien moto", "Épinay-sur-Seine", "93", "Seine-Saint-Denis"],
-  authors: [{ name: "Pôle Position 93" }],
+  description: "SPEED MOTO (Speed Moto Pièces) : Vente de motos, scooters, quads neufs et d'occasion. Entretien, pare-brise et pièces détachées à Épinay-sur-Seine (93).",
+  keywords: ["moto", "scooter", "quad", "moto cross", "t-max", "tmax 560", "entretien moto", "Épinay-sur-Seine", "93", "Seine-Saint-Denis"],
+  authors: [{ name: "SPEED MOTO" }],
   openGraph: {
     type: "website",
     locale: "fr_FR",
-    url: "https://poleposition93.fr",
-    siteName: "Pôle Position 93",
-    title: "Pôle Position 93 | Experts Moto & Quad en Seine-Saint-Denis",
+    url: "https://speedmoto.fr",
+    siteName: "SPEED MOTO",
+    title: "SPEED MOTO | Experts Moto & Quad en Seine-Saint-Denis",
     description: "Découvrez notre large gamme de motos, scooters et quads. Services d'entretien et pièces détachées au meilleur prix.",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Pôle Position 93 Showroom",
+        alt: "SPEED MOTO Showroom",
       },
     ],
   },

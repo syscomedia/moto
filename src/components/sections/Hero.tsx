@@ -11,8 +11,8 @@ export default function Hero() {
       {/* Background Image with Dynamic Overlay */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/hero_motorcycle_showroom.png"
-          alt="Pôle Position 93 Showroom"
+          src="/1.png"
+          alt="SPEED MOTO Showroom"
           fill
           className="object-cover opacity-50 scale-105"
           priority
@@ -22,21 +22,21 @@ export default function Hero() {
       </div>
 
       {/* Floating Animated Shapes */}
-      <motion.div 
-        animate={{ 
+      <motion.div
+        animate={{
           y: [0, -20, 0],
           rotate: [0, 5, 0]
         }}
         transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute top-1/4 right-1/4 w-64 h-64 bg-racing-red/10 rounded-full blur-[100px] z-0" 
+        className="absolute top-1/4 right-1/4 w-64 h-64 bg-racing-red/10 rounded-full blur-[100px] z-0"
       />
-      <motion.div 
-        animate={{ 
+      <motion.div
+        animate={{
           y: [0, 20, 0],
           rotate: [0, -5, 0]
         }}
         transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-amber-gold/5 rounded-full blur-[120px] z-0" 
+        className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-amber-gold/5 rounded-full blur-[120px] z-0"
       />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 w-full pt-52 md:pt-0">
@@ -56,7 +56,7 @@ export default function Hero() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-racing-red opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-racing-red"></span>
               </span>
-              <span>L'Excellence du 93</span>
+              <span>L'Élite du Deux-Roues</span>
             </motion.div>
 
             <h1 className="text-5xl md:text-8xl font-display font-black text-white mb-6 leading-[0.95] tracking-tight italic">
@@ -68,7 +68,7 @@ export default function Hero() {
               {"Vente, entretien et pièces détachées haute performance pour motos, quads et scooters. Appelez le 01\u00A023\u00A045\u00A067\u00A089".split(" ").map((word, i) => {
                 const isPhone = word.match(/\d{2}/);
                 const isCall = word === "Appelez";
-                
+
                 return (
                   <motion.span
                     key={i}
@@ -100,13 +100,13 @@ export default function Hero() {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-12">
               {[
-                "Pneus Neufs & Occasion",
+                "Atelier Haute Performance",
                 "Entretien Premium",
                 "Pièces Détachées Certifiées",
                 "Achat / Vente Cash 24h",
               ].map((item, index) => (
-                <motion.div 
-                  key={item} 
+                <motion.div
+                  key={item}
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: 0.5 + (index * 0.1) }}
@@ -119,7 +119,7 @@ export default function Hero() {
             </div>
 
             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6">
-              <motion.button 
+              <motion.button
                 whileHover={{ scale: 1.05, boxShadow: "0 0 30px rgba(227, 24, 55, 0.4)" }}
                 whileTap={{ scale: 0.95 }}
                 className="bg-racing-red text-white px-10 py-5 rounded-full font-black text-lg flex items-center justify-center space-x-3 transition-all shadow-2xl shadow-racing-red/30 group"
@@ -127,8 +127,8 @@ export default function Hero() {
                 <span>EXPLORER LE SHOWROOM</span>
                 <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
               </motion.button>
-              
-              <motion.button 
+
+              <motion.button
                 whileHover={{ scale: 1.05, backgroundColor: "rgba(255,255,255,0.1)" }}
                 whileTap={{ scale: 0.95 }}
                 className="glass text-white px-10 py-5 rounded-full font-black text-lg flex items-center justify-center space-x-3 transition-all"
@@ -145,14 +145,14 @@ export default function Hero() {
 
       {/* Dynamic Background Decoration */}
       <div className="absolute right-0 bottom-0 w-1/3 h-full overflow-hidden pointer-events-none hidden lg:block">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, x: 100 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1.5, delay: 0.5 }}
           className="relative w-full h-full"
         >
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-display font-black text-[30rem] text-white/[0.03] italic -rotate-12 select-none">
-            93
+            SM
           </div>
         </motion.div>
       </div>
@@ -164,10 +164,10 @@ export default function Hero() {
         className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 hidden md:block"
       >
         <div className="w-6 h-10 border-2 border-white/20 rounded-full flex justify-center p-1 backdrop-blur-sm">
-          <motion.div 
+          <motion.div
             animate={{ height: ["20%", "60%", "20%"] }}
             transition={{ repeat: Infinity, duration: 1.5 }}
-            className="w-1 bg-racing-red rounded-full" 
+            className="w-1 bg-racing-red rounded-full"
           />
         </div>
       </motion.div>

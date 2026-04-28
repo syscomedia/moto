@@ -44,12 +44,12 @@ export default function CategorySection() {
               className="group relative overflow-hidden rounded-[2rem] aspect-[4/5] bg-carbon-light border border-white/5 shadow-2xl"
             >
               {/* Category Image */}
-              <div className="absolute inset-0 z-0 overflow-hidden">
+              <div className="absolute inset-0 z-0 overflow-hidden p-12">
                 <Image
                   src={category.image}
                   alt={category.name}
                   fill
-                  className="object-cover group-hover:scale-110 transition-transform duration-700 opacity-60"
+                  className="object-contain group-hover:scale-105 transition-transform duration-700 opacity-90"
                 />
               </div>
 

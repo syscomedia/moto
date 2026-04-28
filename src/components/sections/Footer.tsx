@@ -9,7 +9,7 @@ export default function Footer() {
     <footer className="bg-mesh text-white pt-32 pb-16 border-t border-white/5 relative overflow-hidden">
       {/* Decorative background text */}
       <div className="absolute bottom-0 right-0 w-full h-full overflow-hidden pointer-events-none opacity-[0.02] flex items-end justify-end select-none">
-        <span className="text-[20vw] font-display font-black italic -mb-20 -mr-10">SMP 93</span>
+        <span className="text-[20vw] font-display font-black italic -mb-20 -mr-10">SM</span>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 relative z-10">
@@ -18,8 +18,8 @@ export default function Footer() {
           <div className="space-y-8">
             <Link href="/" className="inline-block group">
               <span className="text-3xl font-display font-black tracking-tighter italic">
-                <span className="text-racing-red group-hover:text-white transition-colors">PÔLE</span>
-                <span className="text-white group-hover:text-racing-red transition-colors"> POSITION 93</span>
+                <span className="text-racing-red group-hover:text-white transition-colors">SPEED</span>
+                <span className="text-white group-hover:text-racing-red transition-colors"> MOTO</span>
               </span>
             </Link>
             <p className="text-white/40 text-sm leading-relaxed font-medium">
@@ -53,16 +53,17 @@ export default function Footer() {
           <div>
             <h4 className="text-sm font-black mb-8 uppercase tracking-[0.3em] text-white/40 italic">Machines</h4>
             <ul className="space-y-4 text-white/60 font-medium text-sm">
-              <li><Link href="/categories/moto-scooter" className="hover:text-white transition-colors">Gamme Moto Scooter</Link></li>
+              <li><Link href="/categories/t-max" className="hover:text-white transition-colors">Gamme T-max</Link></li>
               <li><Link href="/categories/quad" className="hover:text-white transition-colors">Gamme Quad Performance</Link></li>
-              <li><Link href="/categories/moto-cross" className="hover:text-white transition-colors">Série Moto Cross Pro</Link></li>
-              <li><Link href="/categories/scooter-750-premium" className="hover:text-white transition-colors">Maxi Scooter 750</Link></li>
+              <li><Link href="/categories/suzuki-gsxr" className="hover:text-white transition-colors">Série GSX-R Sport</Link></li>
+              <li><Link href="/categories/pieces-detachees" className="hover:text-white transition-colors">Pièces Toutes Marques</Link></li>
+              <li><Link href="/categories/export-occasions" className="hover:text-white transition-colors">Export & Occasions</Link></li>
             </ul>
           </div>
 
           {/* Contact Info */}
           <div>
-            <h4 className="text-sm font-black mb-8 uppercase tracking-[0.3em] text-white/40 italic">Showroom 93</h4>
+            <h4 className="text-sm font-black mb-8 uppercase tracking-[0.3em] text-white/40 italic">Showroom SM</h4>
             <ul className="space-y-6 text-white font-medium text-sm">
               <li className="flex items-start space-x-4">
                 <div className="bg-racing-red/10 p-3 rounded-xl">
@@ -80,7 +81,7 @@ export default function Footer() {
                 <div className="bg-racing-red/10 p-3 rounded-xl">
                   <Mail className="w-5 h-5 text-racing-red" />
                 </div>
-                <span className="hover:text-racing-red transition-colors cursor-pointer">contact@poleposition93.fr</span>
+                <span className="hover:text-racing-red transition-colors cursor-pointer">contact@speedmoto.fr</span>
               </li>
             </ul>
           </div>
@@ -88,7 +89,7 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="pt-12 border-t border-white/5 flex flex-col lg:flex-row items-center justify-between gap-8 text-white/20 text-[10px] font-black uppercase tracking-[0.2em]">
-          <p>© 2024 PÔLE POSITION 93 - SPEED MOTO PIÈCES. PROPRIÉTÉ DE BENYOUCEF SAMY.</p>
+          <p>© 2024 SPEED MOTO - SPEED MOTO PIÈCES. PROPRIÉTÉ DE BENYOUCEF SAMY.</p>
           <div className="flex space-x-8">
             <Link href="/legal" className="hover:text-white transition-colors">Mentions Légales</Link>
             <Link href="/privacy" className="hover:text-white transition-colors">Confidentialité</Link>

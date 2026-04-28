@@ -10,6 +10,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
 import LoadingScreen from "@/components/ui/LoadingScreen";
 import FloatingContact from "@/components/ui/FloatingContact";
+import Link from "next/link";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -35,7 +36,7 @@ export default function Home() {
           {[
             { icon: Phone, label: "Service Client", value: "01 23 45 67 89", size: "text-lg" },
             { icon: MapPin, label: "Localisation", value: "33 Route de Saint-Leu, 93800 Épinay", size: "text-[10px]" },
-            { icon: Clock, label: "Ouverture", value: "Lun-Sam: 09h - 19h", size: "text-lg" },
+            { icon: Clock, label: "Ouverture", value: "Lun-Ven: 10h-19h | Sam: 14h-19h", size: "text-[10px]" },
           ].map((item, i) => (
             <motion.div 
               key={item.label}
@@ -71,14 +72,13 @@ export default function Home() {
                 PLUS QU'UN GARAGE, <br /><span className="text-gradient">VOTRE PARTENAIRE.</span>
               </h2>
               <p className="text-white/50 mb-10 text-xl leading-relaxed font-medium">
-                Pôle Position 93 redéfinit l'entretien deux-roues avec une précision chirurgicale et une passion sans limite.
+                SPEED MOTO redéfinit l'entretien deux-roues avec une précision chirurgicale et une passion sans limite.
               </p>
               <div className="space-y-6 mb-12">
                 {[
-                  "Changement de pneus (Neufs & Occasion)",
-                  "Entretien complet et système de freinage",
-                  "Remplacement de pare-brise & bulles",
-                  "Vente de pièces détachées d'origine",
+                  "Pièces détachées toutes marques",
+                  "Vente de véhicules d'occasion & export",
+                  "Atelier : Freinage & Entretien complet",
                 ].map((service) => (
                   <div key={service} className="flex items-center space-x-4 text-white group cursor-default">
                     <div className="w-2 h-2 bg-racing-red rounded-full group-hover:scale-150 transition-transform shadow-[0_0_10px_#E31837]" />
@@ -86,10 +86,12 @@ export default function Home() {
                   </div>
                 ))}
               </div>
-              <button className="relative group overflow-hidden px-10 py-5 rounded-full bg-white text-carbon-black font-black uppercase italic tracking-widest transition-all hover:pr-14 shadow-xl">
-                <span className="relative z-10">DÉCOUVRIR NOS SERVICES</span>
-                <ArrowRight className="absolute right-6 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-all w-6 h-6" />
-              </button>
+              <Link href="/services">
+                <button className="relative group overflow-hidden px-10 py-5 rounded-full bg-white text-carbon-black font-black uppercase italic tracking-widest transition-all hover:pr-14 shadow-xl">
+                  <span className="relative z-10">DÉCOUVRIR NOS SERVICES</span>
+                  <ArrowRight className="absolute right-6 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-all w-6 h-6" />
+                </button>
+              </Link>
             </motion.div>
             
             <motion.div 

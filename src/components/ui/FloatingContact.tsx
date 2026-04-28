@@ -72,7 +72,7 @@ export default function FloatingContact() {
 
               {/* Background Accent */}
               <div className="absolute top-0 left-0 opacity-[0.03] pointer-events-none">
-                <span className="text-[20rem] font-display font-black italic -rotate-12">93</span>
+                <span className="text-[20rem] font-display font-black italic -rotate-12">SM</span>
               </div>
 
               <div className="flex flex-col items-center text-center space-y-8 relative z-10">
@@ -117,7 +117,7 @@ export default function FloatingContact() {
                 </div>
 
                 <p className="text-white/10 font-black uppercase text-[8px] tracking-[0.5em]">
-                  PÔLE POSITION 93 • L'ÉLITE DU DEUX-ROUES
+                  SPEED MOTO • L'ÉLITE DU DEUX-ROUES
                 </p>
               </div>
             </div>

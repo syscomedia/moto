@@ -30,7 +30,7 @@ export default function AboutPage() {
             animate={{ opacity: 1, y: 0 }}
             className="text-6xl md:text-8xl font-display font-black mb-8 uppercase italic leading-none tracking-tighter text-white"
           >
-            À PROPOS DE <br /><span className="text-gradient">SMP 93</span>
+            À PROPOS DE <br /><span className="text-gradient">SPEED MOTO</span>
           </motion.h1>
           <motion.p 
             initial={{ opacity: 0 }}
@@ -67,10 +67,10 @@ export default function AboutPage() {
             <span className="text-racing-red font-black uppercase tracking-[0.3em] text-xs mb-6 block italic">Notre Histoire</span>
             <h2 className="text-5xl font-display font-black text-white mb-8 uppercase italic leading-none tracking-tighter">EXPERTISE & <span className="text-gradient">PASSION.</span></h2>
             <p className="text-white/50 mb-8 text-lg leading-relaxed font-medium">
-              Basée à Épinay-sur-Seine, **Pôle Position 93** est née de la volonté de proposer un service premium et accessible à tous les motards de Seine-Saint-Denis. 
+              Basée à Épinay-sur-Seine, **SPEED MOTO** est née de la volonté de proposer un service premium et accessible à tous les motards de Seine-Saint-Denis. 
             </p>
             <p className="text-white/50 mb-12 text-lg leading-relaxed font-medium">
-              Spécialisés dans l'entretien, la vente et la fourniture de pièces détachées, nous mettons un point d'honneur à la qualité de nos interventions. Notre équipe technique certifiée assure un suivi méticuleux de chaque machine qui entre dans notre atelier.
+              Spécialisés dans l'entretien, la vente et la fourniture de pièces détachées toutes marques (Honda, Yamaha, Suzuki, Peugeot, Piaggio, BMW, etc.), nous mettons un point d'honneur à la qualité de nos interventions. Nous proposons également un service d'exportation de scooters d'occasion et de pièces détachées avec carte grise ou RSV.
             </p>
             <div className="grid grid-cols-2 gap-12 border-t border-white/5 pt-12">
               <div>
