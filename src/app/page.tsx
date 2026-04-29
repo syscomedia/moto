@@ -3,13 +3,11 @@
 import Navbar from "@/components/sections/Navbar";
 import Hero from "@/components/sections/Hero";
 import CategorySection from "@/components/sections/CategorySection";
-import WhatsAppButton from "@/components/ui/WhatsAppButton";
 import Footer from "@/components/sections/Footer";
 import { Phone, MapPin, Clock, ArrowRight } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
 import LoadingScreen from "@/components/ui/LoadingScreen";
-import FloatingContact from "@/components/ui/FloatingContact";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -147,8 +145,6 @@ export default function Home() {
 
 
 
-          <WhatsAppButton />
-          <FloatingContact />
           <Footer />
         </motion.main>
       )}

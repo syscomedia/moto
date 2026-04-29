@@ -3,15 +3,23 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Phone, MessageSquare, X, Zap } from "lucide-react";
+import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 
 export default function FloatingContact() {
   const [isVisible, setIsVisible] = useState(false);
   const [isDismissed, setIsDismissed] = useState(false);
+  const pathname = usePathname();
+
+  // Reset state on navigation
+  useEffect(() => {
+    setIsVisible(false);
+    setIsDismissed(false);
+  }, [pathname]);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (!isDismissed && window.scrollY > 800 && !isVisible) {
+      if (!isDismissed && window.scrollY > 400 && !isVisible) {
         setIsVisible(true);
       }
     };

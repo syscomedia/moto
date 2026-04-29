@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter, Outfit } from "next/font/google";
 import "./globals.css";
+import WhatsAppButton from "@/components/ui/WhatsAppButton";
+import FloatingContact from "@/components/ui/FloatingContact";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -59,6 +61,8 @@ export default function RootLayout({
       </head>
       <body className="min-h-full flex flex-col font-sans">
         {children}
+        <WhatsAppButton />
+        <FloatingContact />
       </body>
     </html>
   );
