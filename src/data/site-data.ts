@@ -44,7 +44,7 @@ export const categories: Category[] = [
     name: "Pièces Détachées",
     slug: "pieces-detachees",
     description: "Large choix de pièces toutes marques : carénages, moteurs, optiques, et plus encore.",
-    image: "/piece.jpg"
+    image: "/pices.jpg"
   },
   {
     id: "5",
@@ -107,7 +107,7 @@ export const products: Product[] = [
     category: "pieces-detachees",
     price: 0,
     description: "Consultez notre stock de pièces pour Honda, Yamaha, Suzuki, Piaggio, et bien d'autres.",
-    image: "/piece.jpg",
+    image: "/pices.jpg",
     features: ["Fourches & Carénages", "Moteurs & Échappements", "Selles & Top Case", "Visières & Bulles"]
   },
   {

@@ -19,7 +19,7 @@ export default function Footer() {
             <Link href="/" className="inline-block group">
               <span className="text-3xl font-display font-black tracking-tighter italic">
                 <span className="text-racing-red group-hover:text-white transition-colors">SPEED</span>
-                <span className="text-white group-hover:text-racing-red transition-colors"> MOTO</span>
+                <span className="text-white group-hover:text-racing-red transition-colors"> MOTO PIECES</span>
               </span>
             </Link>
             <p className="text-white/40 text-sm leading-relaxed font-medium">
@@ -75,7 +75,7 @@ export default function Footer() {
                 <div className="bg-racing-red/10 p-3 rounded-xl">
                   <Phone className="w-5 h-5 text-racing-red" />
                 </div>
-                <span className="font-black italic text-lg tracking-tight">01 23 45 67 89</span>
+                <span className="font-black italic text-lg tracking-tight">0759754275</span>
               </li>
               <li className="flex items-center space-x-4">
                 <div className="bg-racing-red/10 p-3 rounded-xl">
@@ -89,7 +89,7 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="pt-12 border-t border-white/5 flex flex-col lg:flex-row items-center justify-between gap-8 text-white/20 text-[10px] font-black uppercase tracking-[0.2em]">
-          <p>© 2024 SPEED MOTO - SPEED MOTO PIÈCES. PROPRIÉTÉ DE BENYOUCEF SAMY.</p>
+          <p>© 2024 SPEED MOTO PIECES. PROPRIÉTÉ DE BENYOUCEF SAMY.</p>
           <div className="flex space-x-8">
             <Link href="/legal" className="hover:text-white transition-colors">Mentions Légales</Link>
             <Link href="/privacy" className="hover:text-white transition-colors">Confidentialité</Link>

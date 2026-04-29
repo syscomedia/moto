@@ -12,7 +12,7 @@ export default function Hero() {
       <div className="absolute inset-0 z-0">
         <Image
           src="/1.png"
-          alt="SPEED MOTO Showroom"
+          alt="SPEED MOTO PIECES Showroom"
           fill
           className="object-cover opacity-50 scale-105"
           priority
@@ -65,7 +65,7 @@ export default function Hero() {
             </h1>
 
             <div className="text-xl md:text-2xl text-white/60 mb-10 leading-relaxed max-w-xl font-medium flex flex-wrap gap-x-[0.3em]">
-              {"Vente, entretien et pièces détachées haute performance pour motos, quads et scooters. Appelez le 01\u00A023\u00A045\u00A067\u00A089".split(" ").map((word, i) => {
+              {"Vente, entretien et pièces détachées haute performance pour motos, quads et scooters. Appelez le 07\u00A059\u00A075\u00A042\u00A075".split(" ").map((word, i) => {
                 const isPhone = word.match(/\d{2}/);
                 const isCall = word === "Appelez";
 
@@ -87,7 +87,7 @@ export default function Hero() {
                   >
                     {isCall && <div className="basis-full h-0 md:hidden" />}
                     {isPhone ? (
-                      <a href="tel:0123456789" className="hover:underline decoration-racing-red/30 transition-all underline-offset-4">
+                      <a href="tel:0759754275" className="hover:underline decoration-racing-red/30 transition-all underline-offset-4">
                         {word}
                       </a>
                     ) : (

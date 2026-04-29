@@ -20,7 +20,7 @@ export default function ContactPage() {
   return (
     <main className="relative flex-1 bg-mesh">
       <Navbar />
-      
+
       {/* Hero Section */}
       <section className="pt-48 pb-20 relative overflow-hidden">
         <div className="absolute top-0 right-0 opacity-[0.03] select-none pointer-events-none -mr-20">
@@ -36,14 +36,14 @@ export default function ContactPage() {
             <Sparkles className="w-4 h-4" />
             <span className="font-black uppercase tracking-widest text-[10px] md:text-sm italic">Réponse en 24h</span>
           </motion.div>
-          <motion.h1 
+          <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             className="text-5xl md:text-8xl font-display font-black mb-8 uppercase italic leading-none tracking-tighter text-white"
           >
             PARLONS <span className="text-gradient animate-glow">PERFORMANCE.</span>
           </motion.h1>
-          <motion.p 
+          <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.2 }}
@@ -56,17 +56,17 @@ export default function ContactPage() {
 
       <section className="py-12 md:py-24 relative z-10">
         <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-20">
-          
+
           {/* Contact Information Cards */}
           <div className="space-y-6 md:space-y-8">
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               className="glass p-6 md:p-10 rounded-[2rem] md:rounded-[2.5rem] border-white/5"
             >
               <h3 className="text-xl md:text-2xl font-display font-black text-white mb-8 md:mb-10 uppercase italic tracking-widest border-b border-white/5 pb-4 md:pb-6">Coordonnées</h3>
-              
+
               <div className="space-y-8 md:space-y-10">
                 <div className="flex items-center space-x-4 md:space-x-6 group">
                   <div className="bg-racing-red/10 p-4 md:p-5 rounded-2xl text-racing-red group-hover:bg-racing-red group-hover:text-white transition-all duration-500 shadow-lg shadow-racing-red/5">
@@ -84,7 +84,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <p className="text-[8px] md:text-[10px] font-black uppercase tracking-[0.3em] text-white/40 mb-1">Ligne Directe</p>
-                    <p className="text-white font-bold text-base md:text-lg">01 23 45 67 89</p>
+                    <p className="text-white font-bold text-base md:text-lg">0759754275</p>
                   </div>
                 </div>
 
@@ -100,7 +100,7 @@ export default function ContactPage() {
               </div>
             </motion.div>
 
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.2 }}
@@ -111,7 +111,7 @@ export default function ContactPage() {
                 <h3 className="text-xl md:text-2xl font-display font-black text-white uppercase italic tracking-widest">Horaires</h3>
                 <Clock className="w-5 h-5 md:w-6 md:h-6 text-racing-red animate-pulse" />
               </div>
-              
+
               <div className="grid grid-cols-1 gap-3 md:gap-4">
                 {[
                   { day: "Lundi - Vendredi", hours: "09:00 - 19:00", active: true },
@@ -128,34 +128,34 @@ export default function ContactPage() {
           </div>
 
           {/* Form Card */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             className="glass-red p-8 md:p-12 rounded-[2.5rem] md:rounded-[3rem] border-white/10 relative shadow-2xl"
           >
             <div className="absolute top-8 right-8 opacity-5 md:opacity-10">
-                <Send className="w-12 h-12 md:w-20 md:h-20 text-white" />
+              <Send className="w-12 h-12 md:w-20 md:h-20 text-white" />
             </div>
-            
+
             <h3 className="text-2xl md:text-3xl font-display font-black text-white mb-8 md:mb-10 uppercase italic tracking-widest">Message Direct</h3>
-            
+
             <form className="space-y-6 md:space-y-8" onSubmit={(e) => e.preventDefault()}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
                 <div className="space-y-2 md:space-y-3">
                   <label className="text-[8px] md:text-[10px] font-black uppercase tracking-[0.3em] text-white/40">Nom Complet</label>
-                  <input 
-                    type="text" 
-                    className="w-full bg-white/5 border border-white/10 rounded-xl md:rounded-2xl px-5 md:px-6 py-3 md:py-4 outline-none focus:border-racing-red focus:bg-white/10 transition-all text-white text-sm md:text-base font-medium" 
-                    placeholder="ex: Jean Dupont" 
+                  <input
+                    type="text"
+                    className="w-full bg-white/5 border border-white/10 rounded-xl md:rounded-2xl px-5 md:px-6 py-3 md:py-4 outline-none focus:border-racing-red focus:bg-white/10 transition-all text-white text-sm md:text-base font-medium"
+                    placeholder="ex: Jean Dupont"
                   />
                 </div>
                 <div className="space-y-2 md:space-y-3">
                   <label className="text-[8px] md:text-[10px] font-black uppercase tracking-[0.3em] text-white/40">Téléphone</label>
-                  <input 
-                    type="tel" 
-                    className="w-full bg-white/5 border border-white/10 rounded-xl md:rounded-2xl px-5 md:px-6 py-3 md:py-4 outline-none focus:border-racing-red focus:bg-white/10 transition-all text-white text-sm md:text-base font-medium" 
-                    placeholder="06 -- -- -- --" 
+                  <input
+                    type="tel"
+                    className="w-full bg-white/5 border border-white/10 rounded-xl md:rounded-2xl px-5 md:px-6 py-3 md:py-4 outline-none focus:border-racing-red focus:bg-white/10 transition-all text-white text-sm md:text-base font-medium"
+                    placeholder="06 -- -- -- --"
                   />
                 </div>
               </div>
@@ -189,11 +189,10 @@ export default function ContactPage() {
                               setSelectedSubject(subject);
                               setIsDropdownOpen(false);
                             }}
-                            className={`w-full text-left px-5 py-3 rounded-xl text-sm font-bold transition-all duration-300 ${
-                              selectedSubject === subject 
-                                ? 'bg-racing-red text-white' 
+                            className={`w-full text-left px-5 py-3 rounded-xl text-sm font-bold transition-all duration-300 ${selectedSubject === subject
+                                ? 'bg-racing-red text-white'
                                 : 'text-white/60 hover:bg-white/5 hover:text-white'
-                            }`}
+                              }`}
                           >
                             {subject}
                           </button>
@@ -206,8 +205,8 @@ export default function ContactPage() {
 
               <div className="space-y-2 md:space-y-3">
                 <label className="text-[8px] md:text-[10px] font-black uppercase tracking-[0.3em] text-white/40">Votre Message</label>
-                <textarea 
-                  className="w-full bg-white/5 border border-white/10 rounded-xl md:rounded-2xl px-5 md:px-6 py-4 md:py-5 outline-none focus:border-racing-red focus:bg-white/10 transition-all text-white text-sm md:text-base font-medium h-32 md:h-40" 
+                <textarea
+                  className="w-full bg-white/5 border border-white/10 rounded-xl md:rounded-2xl px-5 md:px-6 py-4 md:py-5 outline-none focus:border-racing-red focus:bg-white/10 transition-all text-white text-sm md:text-base font-medium h-32 md:h-40"
                   placeholder="Dites-nous tout..."
                 ></textarea>
               </div>
@@ -224,7 +223,7 @@ export default function ContactPage() {
       {/* Map Section */}
       <section className="py-24 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4">
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -232,7 +231,7 @@ export default function ContactPage() {
           >
             <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&q=80')] bg-cover opacity-20 grayscale transition-all duration-1000 group-hover:scale-105 group-hover:opacity-40" />
             <div className="absolute inset-0 bg-gradient-to-t from-carbon-black via-transparent to-transparent" />
-            
+
             <div className="absolute inset-0 flex flex-col items-center justify-center space-y-6">
               <div className="bg-racing-red/20 p-6 rounded-full backdrop-blur-xl border border-racing-red/30 shadow-2xl">
                 <MapPin className="w-12 h-12 text-racing-red animate-bounce" />

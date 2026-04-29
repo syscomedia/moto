@@ -43,7 +43,7 @@ export default function Navbar() {
         <Link href="/" className="flex items-center space-x-2 group">
           <span className="text-lg md:text-3xl font-display font-black tracking-tighter italic whitespace-nowrap">
             <span className="text-racing-red group-hover:text-white transition-colors">SPEED</span>
-            <span className="text-white group-hover:text-racing-red transition-colors"> MOTO</span>
+            <span className="text-white group-hover:text-racing-red transition-colors"> MOTO PIECES</span>
           </span>
         </Link>
 

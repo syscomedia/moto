@@ -15,25 +15,25 @@ const outfit = Outfit({
 export const metadata: Metadata = {
   metadataBase: new URL("https://speedmoto.fr"),
   title: {
-    default: "SPEED MOTO | Vente Moto, Scooter & Quad à Épinay-sur-Seine",
-    template: "%s | SPEED MOTO",
+    default: "SPEED MOTO PIECES | Vente Moto, Scooter & Quad à Épinay-sur-Seine",
+    template: "%s | SPEED MOTO PIECES",
   },
-  description: "SPEED MOTO (Speed Moto Pièces) : Vente de motos, scooters, quads neufs et d'occasion. Entretien, pare-brise et pièces détachées à Épinay-sur-Seine (93).",
+  description: "SPEED MOTO PIECES : Vente de motos, scooters, quads neufs et d'occasion. Entretien, pare-brise et pièces détachées à Épinay-sur-Seine (93).",
   keywords: ["moto", "scooter", "quad", "moto cross", "t-max", "tmax 560", "entretien moto", "Épinay-sur-Seine", "93", "Seine-Saint-Denis"],
-  authors: [{ name: "SPEED MOTO" }],
+  authors: [{ name: "SPEED MOTO PIECES" }],
   openGraph: {
     type: "website",
     locale: "fr_FR",
     url: "https://speedmoto.fr",
-    siteName: "SPEED MOTO",
-    title: "SPEED MOTO | Experts Moto & Quad en Seine-Saint-Denis",
-    description: "Découvrez notre large gamme de motos, scooters et quads. Services d'entretien et pièces détachées au meilleur prix.",
+    siteName: "SPEED MOTO PIECES",
+    title: "SPEED MOTO PIECES | Experts Moto & Quad en Seine-Saint-Denis",
+    description: "Experts en vente et entretien de deux-roues à Épinay-sur-Seine.",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "SPEED MOTO Showroom",
+        alt: "SPEED MOTO PIECES Showroom",
       },
     ],
   },
@@ -63,4 +63,3 @@ export default function RootLayout({
     </html>
   );
 }
-

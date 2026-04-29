@@ -7,28 +7,28 @@ import { PenTool as Tool, ShieldCheck, Zap, Cog, Wind, Disc, Sparkles, Globe, Cl
 
 export default function ServicesPage() {
   const parts = [
-    "Fourches", "Carénages", "Selles", "Feux", "Phares", "Pneus", "Bulles", "Visières", 
-    "Top Case", "Tabliers Tucano & Bagster", "Compteurs", "Optiques", "Moteurs", 
+    "Fourches", "Carénages", "Selles", "Feux", "Phares", "Pneus", "Bulles", "Visières",
+    "Top Case", "Tabliers Tucano & Bagster", "Compteurs", "Optiques", "Moteurs",
     "Guidons", "Porte-bagages", "Pot d'échappements"
   ];
 
   const brands = [
-    "Honda", "Yamaha", "Suzuki", "Peugeot", "Piaggio", "BMW (C1)", "MBK", "Gilera", 
+    "Honda", "Yamaha", "Suzuki", "Peugeot", "Piaggio", "BMW (C1)", "MBK", "Gilera",
     "Aprilia", "Vespa", "Kymco", "Sym"
   ];
 
   const models = [
-    "Swing", "Panthéon", "SH", "PCX", "Forza", "X-Max", "Majesty", "Cygnus X", "RG", 
-    "R125", "TDM 900", "TMax 500/530", "Burgman 125/400/600", "X7/X8/X9/X10/Xevo 125", 
-    "Skycruiser", "Evolis", "Flamex", "Flamer", "Booster", "Stunt", "Nitro", "Ovetto", 
-    "Runner", "Nexus", "LX", "GT", "GTS", "GTS Super IE", "Satelis", "CityStar", 
+    "Swing", "Panthéon", "SH", "PCX", "Forza", "X-Max", "Majesty", "Cygnus X", "RG",
+    "R125", "TDM 900", "TMax 500/530", "Burgman 125/400/600", "X7/X8/X9/X10/Xevo 125",
+    "Skycruiser", "Evolis", "Flamex", "Flamer", "Booster", "Stunt", "Nitro", "Ovetto",
+    "Runner", "Nexus", "LX", "GT", "GTS", "GTS Super IE", "Satelis", "CityStar",
     "Metropolis", "MP3 125/250/300/400/500", "GP 800"
   ];
 
   return (
     <main className="relative flex-1 bg-mesh">
       <Navbar />
-      
+
       {/* Hero Section */}
       <section className="pt-48 pb-24 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 text-center relative z-10">
@@ -40,15 +40,15 @@ export default function ServicesPage() {
             <Sparkles className="w-5 h-5" />
             <span className="font-black uppercase tracking-widest text-sm">Expertise Technique</span>
           </motion.div>
-          <motion.h1 
+          <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             className="text-6xl md:text-8xl font-display font-black mb-8 uppercase italic leading-none tracking-tighter text-white"
           >
             NOS <span className="text-gradient">SERVICES</span>
           </motion.h1>
-          
-          <motion.div 
+
+          <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.2 }}
@@ -77,7 +77,7 @@ export default function ServicesPage() {
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
             {/* Pièces Détachées */}
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
@@ -105,7 +105,7 @@ export default function ServicesPage() {
 
             {/* Atelier & Export */}
             <div className="space-y-10">
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0, x: 30 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
@@ -127,7 +127,7 @@ export default function ServicesPage() {
                 </div>
               </motion.div>
 
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0, x: 30 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
@@ -193,18 +193,18 @@ export default function ServicesPage() {
               <p className="text-white/60 text-lg font-medium">Contactez-nous par téléphone ou par mail. Réponse rapide garantie.</p>
             </div>
             <div className="flex flex-col sm:flex-row gap-6 w-full lg:w-auto">
-              <motion.a 
+              <motion.a
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                href="tel:+33123456789" 
+                href="tel:+33123456789"
                 className="bg-white text-racing-red px-12 py-6 rounded-2xl font-black uppercase italic tracking-widest text-center shadow-xl hover:bg-racing-red hover:text-white transition-all text-lg"
               >
-                01 23 45 67 89
+                0759754275
               </motion.a>
-              <motion.a 
+              <motion.a
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                href="/contact" 
+                href="/contact"
                 className="glass text-white px-12 py-6 rounded-2xl font-black uppercase italic tracking-widest text-center hover:bg-white/10 transition-all text-lg border-white/5"
               >
                 Nous Contacter

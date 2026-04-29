@@ -41,7 +41,7 @@ export default function LoadingScreen({ onComplete }: { onComplete: () => void }
         >
           <div className="text-4xl md:text-6xl font-display font-black tracking-tighter italic flex items-center space-x-2">
             <span className="text-racing-red drop-shadow-[0_0_15px_rgba(227,24,55,0.5)]">SPEED</span>
-            <span className="text-white"> MOTO</span>
+            <span className="text-white"> MOTO PIECES</span>
           </div>
           <div className="h-px w-full bg-gradient-to-r from-transparent via-racing-red to-transparent mt-2 opacity-50" />
         </motion.div>
