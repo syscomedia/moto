@@ -34,9 +34,9 @@ export default function Home() {
           <div className="relative z-20 mt-10 md:-mt-24 max-w-7xl mx-auto px-4">
             <div className="glass p-6 md:p-8 rounded-[2rem] md:rounded-[2.5rem] grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 shadow-2xl border-white/5">
               {[
-                { icon: Phone, label: "Service Client", value: "0759754275", size: "text-lg" },
+                { icon: Phone, label: "Service Client", value: "07 59 75 42 75", size: "text-lg" },
                 { icon: MapPin, label: "Localisation", value: "33 Route de Saint-Leu, 93800 Épinay", size: "text-[10px]" },
-                { icon: Clock, label: "Ouverture", value: "Lun-Ven: 10h-19h | Sam: 14h-19h", size: "text-[10px]" },
+                { icon: Clock, label: "Horaires", value: "Lun–Ven : 10h–19h  |  Sam : 14h–19h", size: "text-[10px]" },
               ].map((item, i) => (
                 <motion.div
                   key={item.label}
@@ -78,7 +78,7 @@ export default function Home() {
                     {[
                       "Pièces détachées toutes marques",
                       "Vente de véhicules d'occasion & export",
-                      "Atelier : Freinage & Entretien complet",
+                      "Atelier : freinage & entretien complet",
                     ].map((service) => (
                       <div key={service} className="flex items-center space-x-4 text-white group cursor-default">
                         <div className="w-2 h-2 bg-racing-red rounded-full group-hover:scale-150 transition-transform shadow-[0_0_10px_#E31837]" />
@@ -107,7 +107,7 @@ export default function Home() {
                     <div className="absolute inset-0 bg-gradient-to-t from-carbon-black via-transparent to-white/5" />
                     <div className="absolute bottom-10 left-10 right-10 p-8 glass rounded-[2rem]">
                       <p className="text-white font-black text-2xl uppercase italic mb-2">Atelier Haute Performance</p>
-                      <p className="text-white/60 text-sm font-medium">Équipement de pointe et expertise technique certifiée.</p>
+                      <p className="text-white/60 text-sm font-medium">Équipement de pointe et expertise technique certifiée</p>
                     </div>
                   </div>
                 </motion.div>

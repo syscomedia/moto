@@ -93,8 +93,8 @@ export default function ContactPage() {
                     <Mail className="w-5 h-5 md:w-6 md:h-6" />
                   </div>
                   <div>
-                    <p className="text-[8px] md:text-[10px] font-black uppercase tracking-[0.3em] text-white/40 mb-1">Support Email</p>
-                    <p className="text-white font-bold text-base md:text-lg">contact@poleposition93.fr</p>
+                    <p className="text-[8px] md:text-[10px] font-black uppercase tracking-[0.3em] text-white/40 mb-1">Adresse e-mail</p>
+                    <p className="text-white font-bold text-base md:text-lg">contact@speedmoto.fr</p>
                   </div>
                 </div>
               </div>
@@ -114,7 +114,8 @@ export default function ContactPage() {
 
               <div className="grid grid-cols-1 gap-4">
                 {[
-                  { day: "Lundi - Samedi", hours: "09h - 12h / 13h - 19h", active: true },
+                  { day: "Lundi – Vendredi", hours: "10h00 / 19h00", active: true },
+                  { day: "Samedi", hours: "14h00 / 19h00", active: true },
                   { day: "Dimanche", hours: "Fermé", active: false },
                 ].map((item) => (
                   <div key={item.day} className={`group relative p-5 rounded-2xl border transition-all duration-500 ${item.active ? 'border-white/10 bg-white/5 hover:border-racing-red/30' : 'border-transparent opacity-30'}`}>

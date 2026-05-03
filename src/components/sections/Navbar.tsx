@@ -41,7 +41,7 @@ export default function Navbar() {
       )}>
         {/* Logo */}
         <Link href="/" className="flex items-center space-x-2 group">
-          <span className="text-lg md:text-3xl font-display font-black tracking-tighter italic whitespace-nowrap">
+          <span className="text-3xl font-display font-black tracking-tighter italic whitespace-nowrap">
             <span className="text-racing-red group-hover:text-white transition-colors">SPEED</span>
             <span className="text-white group-hover:text-racing-red transition-colors"> MOTO PIECES</span>
           </span>
@@ -67,11 +67,11 @@ export default function Navbar() {
         {/* CTA Buttons */}
         <div className="hidden md:flex items-center space-x-4">
           <a
-            href="tel:+33123456789"
+            href="tel:0759754275"
             className="flex items-center space-x-2 text-white bg-racing-red px-4 py-2 rounded-full hover:bg-racing-red-hover transition-all"
           >
             <Phone className="w-4 h-4" />
-            <span className="text-sm font-bold italic">APPELER</span>
+            <span className="text-sm font-bold italic">07 59 75 42 75</span>
           </a>
         </div>
 
@@ -118,14 +118,14 @@ export default function Navbar() {
               ))}
               <div className="pt-6 flex flex-col space-y-4">
                 <a
-                  href="tel:+33123456789"
+                  href="tel:0759754275"
                   className="flex items-center justify-center space-x-3 glass-red text-white py-4 rounded-2xl font-black italic uppercase tracking-widest text-sm shadow-lg shadow-racing-red/10 transition-transform active:scale-95"
                 >
                   <Phone className="w-5 h-5 text-racing-red" />
-                  <span>APPELER</span>
+                  <span>07 59 75 42 75</span>
                 </a>
                 <a
-                  href="https://wa.me/33123456789"
+                  href="https://wa.me/33759754275"
                   className="flex items-center justify-center space-x-3 glass-green text-white py-4 rounded-2xl font-black italic uppercase tracking-widest text-sm shadow-lg shadow-green-500/10 transition-transform active:scale-95"
                 >
                   <MessageSquare className="w-5 h-5 text-green-500" />

@@ -115,7 +115,7 @@ export default function ProductPage({ params }: PageProps) {
                 </div> */}
 
                 <p className="text-white/50 text-xl leading-relaxed mb-12 font-medium">
-                  {product.description} Une machine exceptionnelle conçue pour les passionnés de sensations fortes et d'élégance urbaine.
+                  {product.description} Une machine d'exception, conçue pour les passionnés de sensations fortes et d'élégance urbaine.
                 </p>
 
                 {/* Features Grid */}
@@ -185,7 +185,7 @@ export default function ProductPage({ params }: PageProps) {
                   Conçu pour ceux qui ne font aucun compromis, ce modèle allie une ingénierie de pointe à une esthétique racée. Que vous domptiez l'asphalte urbain ou que vous partiez à la conquête de nouveaux horizons, le <span className="text-white italic">{product.name}</span> est votre allié ultime.
                 </p>
                 <p>
-                  Nous offrons un accompagnement premium incluant des solutions de personnalisation exclusive et un programme d'entretien sur mesure pour préserver l'ADN de votre machine.
+                  Nous proposons un accompagnement premium incluant des solutions de personnalisation exclusives et un programme d'entretien sur mesure pour préserver l'état de votre machine.
                 </p>
               </div>
 

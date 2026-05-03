@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils";
 
 export default function Hero() {
   return (
-    <section className="relative h-screen min-h-[800px] flex items-center overflow-hidden bg-mesh">
+    <section className="relative min-h-screen flex items-center overflow-hidden bg-mesh py-20 md:py-28">
       {/* Background Image with Dynamic Overlay */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -39,18 +39,18 @@ export default function Hero() {
         className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-amber-gold/5 rounded-full blur-[120px] z-0"
       />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 w-full pt-52 md:pt-0">
-        <div className="max-w-3xl">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 w-full">
+        <div className="max-w-4xl">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
           >
             <motion.div
-              initial={{ scale: 0.8, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.2 }}
-              className="inline-flex items-center space-x-2 px-3 py-1.5 md:px-4 md:py-2 bg-racing-red/20 border border-racing-red/30 text-racing-red text-[10px] md:text-sm font-black uppercase tracking-[0.3em] mb-6 md:mb-8 rounded-full italic backdrop-blur-md"
+              className="inline-flex items-center space-x-3 px-4 py-2 bg-racing-red/10 border border-racing-red/20 text-racing-red text-[10px] md:text-xs font-black uppercase tracking-[0.4em] mb-6 md:mb-10 rounded-full italic backdrop-blur-md"
             >
               <span className="relative flex h-2 w-2">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-racing-red opacity-75"></span>
@@ -64,41 +64,46 @@ export default function Hero() {
               <span className="text-gradient animate-glow drop-shadow-[0_0_15px_rgba(227,24,55,0.5)]">LA ROUTE.</span>
             </h1>
 
-            <div className="text-xl md:text-2xl text-white/60 mb-10 leading-relaxed max-w-xl font-medium flex flex-wrap gap-x-[0.3em]">
-              {"Vente, entretien et pièces détachées haute performance pour motos, quads et scooters. Appelez le 07\u00A059\u00A075\u00A042\u00A075".split(" ").map((word, i) => {
-                const isPhone = word.match(/\d{2}/);
-                const isCall = word === "Appelez";
+            <div className="max-w-xl mb-10">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.5, duration: 0.8 }}
+                className="space-y-4 md:space-y-6"
+              >
+                <p className="text-sm md:text-lg text-white/70 leading-relaxed font-medium">
+                  Besoin d’un service moto <span className="text-white font-bold italic underline decoration-racing-red/30 underline-offset-4">rapide et efficace</span> ?
+                  Notre garage vous accueille <span className="text-white font-bold">6 jours sur 7</span> pour des entretiens express,
+                  des forfaits révision sans surprise et un changement de pneus en <span className="text-white font-bold">30 minutes chrono</span>.
+                </p>
+                
+                <div className="flex items-center space-x-3 text-[10px] md:text-xs text-white/40 uppercase tracking-[0.2em] font-bold">
+                  <span className="bg-white/10 h-px flex-1" />
+                  <span className="whitespace-nowrap">Expertise & Passion</span>
+                  <span className="bg-white/10 h-px flex-1" />
+                </div>
 
-                return (
-                  <motion.span
-                    key={i}
-                    initial={{ opacity: 0, y: 5 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{
-                      duration: 0.3,
-                      delay: 0.5 + i * 0.1,
-                      ease: "easeOut"
-                    }}
-                    className={cn(
-                      "whitespace-nowrap",
-                      word.match(/motos,|quads|et|scooters./) ? "text-white font-bold" : "",
-                      isPhone ? "text-racing-red font-black" : ""
-                    )}
+                <div className="relative pl-4 border-l-2 border-racing-red/50">
+                  <p className="text-racing-red font-black italic text-lg md:text-2xl leading-tight">
+                    « Passez nous voir et repartez l'esprit tranquille, le moteur au top ! »
+                  </p>
+                </div>
+
+                <div className="pt-2">
+                  <a 
+                    href="tel:0759754275" 
+                    className="group inline-flex flex-col"
                   >
-                    {isCall && <div className="basis-full h-0 md:hidden" />}
-                    {isPhone ? (
-                      <a href="tel:0759754275" className="hover:underline decoration-racing-red/30 transition-all underline-offset-4">
-                        {word}
-                      </a>
-                    ) : (
-                      word
-                    )}
-                  </motion.span>
-                );
-              })}
+                    <span className="text-[10px] md:text-xs text-white/40 uppercase tracking-[0.3em] font-black mb-1 group-hover:text-racing-red transition-colors">Contact Direct</span>
+                    <span className="text-racing-red font-display font-black text-2xl md:text-4xl italic tracking-tighter group-hover:scale-105 transition-transform origin-left">
+                      07 59 75 42 75
+                    </span>
+                  </a>
+                </div>
+              </motion.div>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-12">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4 mb-10 md:mb-12">
               {[
                 "Atelier Haute Performance",
                 "Entretien Premium",
@@ -110,10 +115,10 @@ export default function Hero() {
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: 0.5 + (index * 0.1) }}
-                  className="flex items-center space-x-3 text-white/80 glass-red px-4 py-3 rounded-xl"
+                  className="flex items-center space-x-3 text-white/80 glass-red px-3 py-2.5 md:px-4 md:py-3 rounded-xl border border-white/5"
                 >
-                  <CheckCircle2 className="w-5 h-5 text-racing-red" />
-                  <span className="text-sm font-bold uppercase tracking-wide">{item}</span>
+                  <CheckCircle2 className="w-4 h-4 md:w-5 md:h-5 text-racing-red flex-shrink-0" />
+                  <span className="text-[10px] md:text-sm font-bold uppercase tracking-wide">{item}</span>
                 </motion.div>
               ))}
             </div>
@@ -122,16 +127,16 @@ export default function Hero() {
               <motion.button
                 whileHover={{ scale: 1.05, boxShadow: "0 0 30px rgba(227, 24, 55, 0.4)" }}
                 whileTap={{ scale: 0.95 }}
-                className="bg-racing-red text-white px-10 py-5 rounded-full font-black text-lg flex items-center justify-center space-x-3 transition-all shadow-2xl shadow-racing-red/30 group"
+                className="bg-racing-red text-white px-6 py-4 md:px-10 md:py-5 rounded-full font-black text-base md:text-lg flex items-center justify-center space-x-3 transition-all shadow-2xl shadow-racing-red/30 group"
               >
                 <span>EXPLORER LE SHOWROOM</span>
-                <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
+                <ArrowRight className="w-5 h-5 md:w-6 md:h-6 group-hover:translate-x-1 transition-transform" />
               </motion.button>
 
               <motion.button
                 whileHover={{ scale: 1.05, backgroundColor: "rgba(255,255,255,0.1)" }}
                 whileTap={{ scale: 0.95 }}
-                className="glass text-white px-10 py-5 rounded-full font-black text-lg flex items-center justify-center space-x-3 transition-all"
+                className="glass text-white px-6 py-4 md:px-10 md:py-5 rounded-full font-black text-base md:text-lg flex items-center justify-center space-x-3 transition-all"
               >
                 <div className="bg-white/10 p-1.5 rounded-full">
                   <Play className="w-4 h-4 fill-white" />

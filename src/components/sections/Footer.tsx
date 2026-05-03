@@ -75,7 +75,7 @@ export default function Footer() {
                 <div className="bg-racing-red/10 p-3 rounded-xl">
                   <Phone className="w-5 h-5 text-racing-red" />
                 </div>
-                <span className="font-black italic text-lg tracking-tight">0759754275</span>
+                <span className="font-black italic text-lg tracking-tight">07 59 75 42 75</span>
               </li>
               <li className="flex items-center space-x-4">
                 <div className="bg-racing-red/10 p-3 rounded-xl">

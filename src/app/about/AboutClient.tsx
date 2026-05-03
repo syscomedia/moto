@@ -38,7 +38,7 @@ export default function AboutPage() {
             transition={{ delay: 0.2 }}
             className="text-white/40 max-w-3xl mx-auto text-xl leading-relaxed font-medium"
           >
-            SPEED MOTO PIECES redéfinit l'entretien deux-roues avec une précision chirurgicale et une passion sans limite. Plus qu'un simple garage, nous sommes une équipe de passionnés dédiée à votre performance et à votre sécurité sur la route depuis plus de 15 ans.
+            SPEED MOTO PIECES redéfinit l'entretien deux-roues avec une précision chirurgicale et une passion sans limite. Plus qu'un simple garage, nous sommes une équipe de passionnés dédiée à votre performance et à votre sécurité sur la route.
           </motion.p>
         </div>
       </section>
@@ -67,7 +67,7 @@ export default function AboutPage() {
             <span className="text-racing-red font-black uppercase tracking-[0.3em] text-xs mb-6 block italic">Notre Histoire</span>
             <h2 className="text-5xl font-display font-black text-white mb-8 uppercase italic leading-none tracking-tighter">EXPERTISE & <span className="text-gradient">PASSION.</span></h2>
             <p className="text-white/50 mb-8 text-lg leading-relaxed font-medium">
-              Basée à Épinay-sur-Seine, **SPEED MOTO PIECES** est née de la volonté de proposer un service premium et accessible à tous les motards de Seine-Saint-Denis. 
+              Basée à Épinay-sur-Seine, SPEED MOTO PIECES est née de la volonté de proposer un service premium et accessible à tous les motards de Seine-Saint-Denis.
             </p>
             <p className="text-white/50 mb-12 text-lg leading-relaxed font-medium">
               Spécialisés dans l'entretien, la vente et la fourniture de pièces détachées toutes marques (Honda, Yamaha, Suzuki, Peugeot, Piaggio, BMW, etc.), nous mettons un point d'honneur à la qualité de nos interventions. Nous proposons également un service d'exportation de scooters d'occasion et de pièces détachées avec carte grise ou RSV.

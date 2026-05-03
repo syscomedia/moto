@@ -127,7 +127,7 @@ function SeoTextBlock() {
       <h2>Contactez SPEED MOTO PIECES</h2>
       <p>
         Adresse : 33 Route de Saint-Leu, 93800 Épinay-sur-Seine. Téléphone : 07 59 75 42 75.
-        Horaires : lundi au samedi 09h–12h / 13h–19h.
+        Horaires : du lundi au vendredi de 10h à 19h, le samedi de 14h à 19h.
       </p>
     </section>
   );

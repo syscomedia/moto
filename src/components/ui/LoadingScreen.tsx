@@ -49,7 +49,7 @@ export default function LoadingScreen({ onComplete }: { onComplete: () => void }
         {/* Progress System */}
         <div className="w-full space-y-4">
           <div className="flex justify-between items-end">
-            <span className="text-racing-red font-black italic text-[10px] uppercase tracking-[0.4em]">Initialisation</span>
+            <span className="text-racing-red font-black italic text-[10px] uppercase tracking-[0.4em]">Chargement</span>
             <span className="text-white font-display font-black italic text-2xl leading-none">{progress}%</span>
           </div>
           
@@ -63,7 +63,7 @@ export default function LoadingScreen({ onComplete }: { onComplete: () => void }
           </div>
           
           <p className="text-white/20 font-black uppercase text-[8px] tracking-[0.5em] text-center animate-pulse">
-            Performance & Excellence en cours...
+            Performance & excellence en cours de chargement…
           </p>
         </div>
       </div>

@@ -103,7 +103,7 @@ export default function FloatingContact() {
                   </h2>
 
                   <p className="text-white/40 text-lg md:text-xl font-medium max-w-md mx-auto leading-relaxed">
-                    Ne laissez pas passer l'excellence. Nos experts sont en ligne pour votre besion.
+                    Ne laissez pas passer l'excellence. Nos experts sont disponibles pour répondre à votre besoin.
                   </p>
                 </div>
 

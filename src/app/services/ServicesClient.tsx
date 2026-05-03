@@ -9,7 +9,7 @@ export default function ServicesPage() {
   const parts = [
     "Fourches", "Carénages", "Selles", "Feux", "Phares", "Pneus", "Bulles", "Visières",
     "Top Case", "Tabliers Tucano & Bagster", "Compteurs", "Optiques", "Moteurs",
-    "Guidons", "Porte-bagages", "Pot d'échappements"
+    "Guidons", "Porte-bagages", "Pots d'échappement"
   ];
 
   const brands = [
@@ -63,12 +63,12 @@ export default function ServicesPage() {
                 <div className="text-left">
                   <div className="flex items-center space-x-2 mb-1">
                     <span className="w-2 h-2 bg-green-500 rounded-full animate-ping"></span>
-                    <p className="text-[10px] text-white/40 uppercase font-black tracking-[0.3em]">Lundi - Samedi</p>
+                    <p className="text-[10px] text-white/40 uppercase font-black tracking-[0.3em]">Lundi – Vendredi</p>
                   </div>
                   <p className="text-2xl md:text-3xl text-white font-display font-black italic tracking-tighter leading-tight flex flex-col md:block">
-                    <span className="whitespace-nowrap">09h <span className="text-racing-red">/</span> 12h</span>
-                    <span className="hidden md:inline text-white/20 mx-2">—</span>
-                    <span className="whitespace-nowrap">13h <span className="text-racing-red">/</span> 19h</span>
+                    <span className="whitespace-nowrap">10h <span className="text-racing-red">–</span> 19h</span>
+                    <span className="hidden md:inline text-white/20 mx-2">·</span>
+                    <span className="whitespace-nowrap text-white/50">Sam : 14h <span className="text-racing-red">–</span> 19h</span>
                   </p>
                 </div>
               </div>
@@ -81,6 +81,7 @@ export default function ServicesPage() {
               <div className="text-left">
                 <p className="text-[10px] text-white/40 uppercase font-black tracking-[0.3em] mb-1">Dimanche</p>
                 <p className="text-2xl md:text-3xl text-white/40 font-display font-black italic tracking-tighter uppercase">Fermé</p>
+                {/* samedi was moved to main card */}
               </div>
             </div>
           </motion.div>
@@ -157,7 +158,7 @@ export default function ServicesPage() {
                 </div>
                 <h3 className="text-3xl font-display font-black text-white mb-6 uppercase italic">Occasions & Export</h3>
                 <p className="text-white/50 text-lg leading-relaxed font-medium">
-                  Scooters d'occasions et pièces disponibles pour l'export avec carte grise ou RSV !
+                  Scooters d'occasion et pièces disponibles pour l'export avec carte grise ou RSV.
                 </p>
               </motion.div>
             </div>
@@ -211,7 +212,7 @@ export default function ServicesPage() {
               <motion.a
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                href="tel:+33123456789"
+                href="tel:+33759754275"
                 className="bg-white text-racing-red px-12 py-6 rounded-2xl font-black uppercase italic tracking-widest text-center shadow-xl hover:bg-racing-red hover:text-white transition-all text-lg"
               >
                 0759754275

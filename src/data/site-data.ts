@@ -50,7 +50,7 @@ export const categories: Category[] = [
     id: "5",
     name: "Export & Occasions",
     slug: "export-occasions",
-    description: "Scooters d'occasions et pièces disponibles pour l'export avec carte grise ou RSV.",
+    description: "Scooters d'occasion et pièces disponibles pour l'export avec carte grise ou RSV.",
     image: "/export.jpg"
   }
 ];
