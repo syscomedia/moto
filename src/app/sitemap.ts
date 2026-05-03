@@ -2,20 +2,20 @@ import { MetadataRoute } from 'next';
 import { categories, products } from '@/data/site-data';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://poleposition93.fr';
+  const baseUrl = 'https://speedmoto.fr';
 
   const categoryUrls = categories.map((c) => ({
     url: `${baseUrl}/categories/${c.slug}`,
     lastModified: new Date(),
     changeFrequency: 'weekly' as const,
-    priority: 0.8,
+    priority: 0.9,
   }));
 
   const productUrls = products.map((p) => ({
     url: `${baseUrl}/products/${p.id}`,
     lastModified: new Date(),
     changeFrequency: 'weekly' as const,
-    priority: 0.7,
+    priority: 0.8,
   }));
 
   return [
@@ -26,22 +26,28 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
-      url: `${baseUrl}/about`,
+      url: `${baseUrl}/services`,
       lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.5,
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/categories`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.9,
     },
     {
       url: `${baseUrl}/contact`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
-      priority: 0.5,
+      priority: 0.7,
     },
     {
-      url: `${baseUrl}/services`,
+      url: `${baseUrl}/about`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
-      priority: 0.5,
+      priority: 0.6,
     },
     ...categoryUrls,
     ...productUrls,
