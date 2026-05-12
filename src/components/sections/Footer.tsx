@@ -46,6 +46,7 @@ export default function Footer() {
               <li><Link href="/services" className="hover:text-racing-red transition-all flex items-center space-x-2 group"><ArrowRight className="w-3 h-3 opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 transition-all" /><span>Atelier Expert</span></Link></li>
               <li><Link href="/about" className="hover:text-racing-red transition-all flex items-center space-x-2 group"><ArrowRight className="w-3 h-3 opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 transition-all" /><span>Notre ADN</span></Link></li>
               <li><Link href="/contact" className="hover:text-racing-red transition-all flex items-center space-x-2 group"><ArrowRight className="w-3 h-3 opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 transition-all" /><span>Contact Direct</span></Link></li>
+              <li><Link href="/casse-moto" className="hover:text-racing-red transition-all flex items-center space-x-2 group"><ArrowRight className="w-3 h-3 opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 transition-all" /><span>Casse Moto</span></Link></li>
             </ul>
           </div>
 
@@ -58,6 +59,7 @@ export default function Footer() {
               <li><Link href="/categories/suzuki-gsxr" className="hover:text-white transition-colors">Série GSX-R Sport</Link></li>
               <li><Link href="/categories/pieces-detachees" className="hover:text-white transition-colors">Pièces Toutes Marques</Link></li>
               <li><Link href="/categories/export-occasions" className="hover:text-white transition-colors">Export & Occasions</Link></li>
+              <li><Link href="/casse-moto" className="hover:text-white transition-colors">Casse Moto Paris 93</Link></li>
             </ul>
           </div>
 

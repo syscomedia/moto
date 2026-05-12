@@ -148,6 +148,18 @@ export const metadata: Metadata = {
   },
 };
 
+const websiteJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "SPEED MOTO PIECES",
+  url: "https://speedmotopieces.com",
+  potentialAction: {
+    "@type": "SearchAction",
+    target: "https://speedmotopieces.com/categories?q={search_term_string}",
+    "query-input": "required name=search_term_string",
+  },
+};
+
 const localBusinessJsonLd = {
   "@context": "https://schema.org",
   "@type": "AutoPartsStore",
@@ -221,6 +233,10 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
         />
       </head>
       <body className="min-h-full flex flex-col font-sans">
