@@ -39,3 +39,6 @@ Notre équipe se fera un plaisir de vous répondre rapidement.)
 
 
  franchise au offert pour chaque pare brise deux pneu ou faire
+
+
+ssh -o IdentitiesOnly=yes -i kammel-key.pem ubuntu@15.237.43.4

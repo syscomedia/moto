@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "SPEED MOTO PIECES : N°1 spécialiste pièces moto et scooter à Épinay-sur-Seine (93). Vente Yamaha T-Max 560, Suzuki GSX-R 1000, Quad. Pièces détachées toutes marques : Honda, Yamaha, Suzuki, Piaggio, Peugeot. Entretien, freinage, export. Tél : 07 59 75 42 75.",
   alternates: {
-    canonical: "https://speedmoto.fr",
+    canonical: "https://speedmotopieces.com",
   },
 };
 
@@ -74,17 +74,7 @@ function SeoTextBlock() {
   return (
     <section
       aria-label="À propos de SPEED MOTO PIECES"
-      style={{
-        position: "absolute",
-        width: "1px",
-        height: "1px",
-        padding: "0",
-        margin: "-1px",
-        overflow: "hidden",
-        clip: "rect(0,0,0,0)",
-        whiteSpace: "nowrap",
-        borderWidth: "0",
-      }}
+      className="bg-gray-50 py-12 px-4 sm:px-8 lg:px-16 text-gray-700"
     >
       <h2>SPEED MOTO PIECES – N°1 Pièces Moto et Scooter à Épinay-sur-Seine (93)</h2>
       <p>
@@ -123,6 +113,14 @@ function SeoTextBlock() {
         de pièces détachées vers l'international. Nous gérons l'ensemble des démarches
         administratives : carte grise, dossiers RSV, transit douanier, conditionnement et
         logistique. Tarifs préférentiels pour les professionnels.
+      </p>
+      <h2>Casse Moto – Pièces Occasion Toutes Marques</h2>
+      <p>
+        SPEED MOTO PIECES agit comme une casse moto moderne : nous récupérons des motos et scooters
+        accidentés ou hors d'usage et revendons leurs pièces détachées d'occasion testées et
+        contrôlées. Trouvez ici des pièces moto occasion pas chères pour Honda, Yamaha, Suzuki,
+        Piaggio, Peugeot, MBK, Vespa et toutes les grandes marques. Une vraie casse moto en
+        Seine-Saint-Denis (93), proche de Paris.
       </p>
       <h2>Contactez SPEED MOTO PIECES</h2>
       <p>

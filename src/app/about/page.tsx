@@ -14,13 +14,13 @@ export const metadata: Metadata = {
     "atelier moto épinay",
   ],
   alternates: {
-    canonical: "https://speedmoto.fr/about",
+    canonical: "https://speedmotopieces.com/about",
   },
   openGraph: {
     title: "À Propos de SPEED MOTO PIECES – Expertise Moto & Scooter 93",
     description:
       "15 ans d'expertise en vente et entretien de deux-roues à Épinay-sur-Seine. Pièces toutes marques, scooters d'occasion, export.",
-    url: "https://speedmoto.fr/about",
+    url: "https://speedmotopieces.com/about",
   },
 };
 

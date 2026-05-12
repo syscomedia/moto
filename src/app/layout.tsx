@@ -15,7 +15,7 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://speedmoto.fr"),
+  metadataBase: new URL("https://speedmotopieces.com"),
   title: {
     default: "SPEED MOTO PIECES | N°1 Pièces Moto, Scooter & Quad – Épinay-sur-Seine (93)",
     template: "%s | SPEED MOTO PIECES – Pièces Moto & Scooter 93",
@@ -25,6 +25,12 @@ export const metadata: Metadata = {
   keywords: [
     "pièces moto",
     "pièces détachées moto",
+    "casse moto",
+    "casse moto France",
+    "casse moto Île-de-France",
+    "casse moto 93",
+    "pièces moto occasion",
+    "pièces scooter occasion",
     "pièces scooter",
     "pièces moto France",
     "moto occasion",
@@ -91,14 +97,14 @@ export const metadata: Metadata = {
     "MP3",
     "Metropolis",
   ],
-  authors: [{ name: "SPEED MOTO PIECES", url: "https://speedmoto.fr" }],
+  authors: [{ name: "SPEED MOTO PIECES", url: "https://speedmotopieces.com" }],
   creator: "SPEED MOTO PIECES",
   publisher: "SPEED MOTO PIECES",
   category: "Pièces Moto & Scooter",
   openGraph: {
     type: "website",
     locale: "fr_FR",
-    url: "https://speedmoto.fr",
+    url: "https://speedmotopieces.com",
     siteName: "SPEED MOTO PIECES",
     title: "SPEED MOTO PIECES | N°1 Pièces Moto & Scooter – Épinay-sur-Seine 93",
     description:
@@ -120,7 +126,7 @@ export const metadata: Metadata = {
     images: ["/og-image.jpg"],
   },
   alternates: {
-    canonical: "https://speedmoto.fr",
+    canonical: "https://speedmotopieces.com",
   },
   robots: {
     index: true,
@@ -147,9 +153,9 @@ const localBusinessJsonLd = {
   "@type": "AutoPartsStore",
   name: "SPEED MOTO PIECES",
   alternateName: "Speed Moto Pièces",
-  url: "https://speedmoto.fr",
-  logo: "https://speedmoto.fr/icoa.png",
-  image: "https://speedmoto.fr/og-image.jpg",
+  url: "https://speedmotopieces.com",
+  logo: "https://speedmotopieces.com/icoa.png",
+  image: "https://speedmotopieces.com/og-image.jpg",
   description:
     "Spécialiste N°1 en pièces détachées moto et scooter à Épinay-sur-Seine. Vente moto, scooter, quad neuf et occasion. Entretien toutes marques. Export international.",
   telephone: "+33759754275",

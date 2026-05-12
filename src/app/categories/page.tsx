@@ -20,13 +20,13 @@ export const metadata: Metadata = {
     "achat moto 93",
   ],
   alternates: {
-    canonical: "https://speedmoto.fr/categories",
+    canonical: "https://speedmotopieces.com/categories",
   },
   openGraph: {
     title: "Showroom Motos & Scooters – SPEED MOTO PIECES Épinay 93",
     description:
       "T-Max 560, GSX-R 1000, Quad, Pièces Détachées, Export. Le meilleur choix de deux-roues en Seine-Saint-Denis.",
-    url: "https://speedmoto.fr/categories",
+    url: "https://speedmotopieces.com/categories",
   },
 };
 

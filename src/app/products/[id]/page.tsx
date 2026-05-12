@@ -18,16 +18,16 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const description = isPiecesCat
     ? `Pièces détachées moto et scooter toutes marques chez SPEED MOTO PIECES, Épinay-sur-Seine (93). ${product.description} Fourches, carénages, moteurs, selles, optiques et plus.`
     : isExport
-    ? `Export scooter occasion et pièces avec carte grise ou RSV. ${product.description} SPEED MOTO PIECES, Épinay-sur-Seine (93).`
-    : `${product.name} chez SPEED MOTO PIECES, Épinay-sur-Seine (93). ${product.description} Meilleur prix en Seine-Saint-Denis. Appelez le 07 59 75 42 75.`;
+      ? `Export scooter occasion et pièces avec carte grise ou RSV. ${product.description} SPEED MOTO PIECES, Épinay-sur-Seine (93).`
+      : `${product.name} chez SPEED MOTO PIECES, Épinay-sur-Seine (93). ${product.description} Meilleur prix en Seine-Saint-Denis. Appelez le 07 59 75 42 75.`;
 
   const productJsonLd = {
     "@context": "https://schema.org",
     "@type": "Product",
     name: product.name,
     description: product.description,
-    image: `https://speedmoto.fr${product.image}`,
-    url: `https://speedmoto.fr/products/${id}`,
+    image: `https://speedmotopieces.com${product.image}`,
+    url: `https://speedmotopieces.com/products/${id}`,
     offers: {
       "@type": "Offer",
       price: product.price > 0 ? product.price : undefined,
@@ -61,12 +61,12 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       "93",
       "moto occasion 93",
     ],
-    alternates: { canonical: `https://speedmoto.fr/products/${id}` },
+    alternates: { canonical: `https://speedmotopieces.com/products/${id}` },
     openGraph: {
       title: `${product.name} | SPEED MOTO PIECES`,
       description,
-      url: `https://speedmoto.fr/products/${id}`,
-      images: [{ url: `https://speedmoto.fr${product.image}`, alt: product.name }],
+      url: `https://speedmotopieces.com/products/${id}`,
+      images: [{ url: `https://speedmotopieces.com${product.image}`, alt: product.name }],
     },
     other: {
       "application/ld+json": JSON.stringify(productJsonLd),
@@ -84,8 +84,8 @@ export default async function ProductPage({ params }: PageProps) {
     "@type": "Product",
     name: product.name,
     description: product.description,
-    image: `https://speedmoto.fr${product.image}`,
-    url: `https://speedmoto.fr/products/${id}`,
+    image: `https://speedmotopieces.com${product.image}`,
+    url: `https://speedmotopieces.com/products/${id}`,
     offers: {
       "@type": "Offer",
       price: product.price > 0 ? product.price : undefined,

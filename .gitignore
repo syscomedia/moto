@@ -23,6 +23,8 @@
 # misc
 .DS_Store
 *.pem
+.sentry-native/
+.sentry/
 
 # debug
 npm-debug.log*

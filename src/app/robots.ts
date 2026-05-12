@@ -6,7 +6,7 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://speedmoto.fr/sitemap.xml',
-    host: 'https://speedmoto.fr',
+    sitemap: 'https://speedmotopieces.com/sitemap.xml',
+    host: 'https://speedmotopieces.com',
   };
 }

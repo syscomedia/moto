@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 import { categories, products } from '@/data/site-data';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://speedmoto.fr';
+  const baseUrl = 'https://speedmotopieces.com';
 
   const categoryUrls = categories.map((c) => ({
     url: `${baseUrl}/categories/${c.slug}`,

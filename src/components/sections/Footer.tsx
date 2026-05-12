@@ -81,7 +81,7 @@ export default function Footer() {
                 <div className="bg-racing-red/10 p-3 rounded-xl">
                   <Mail className="w-5 h-5 text-racing-red" />
                 </div>
-                <span className="hover:text-racing-red transition-colors cursor-pointer">contact@speedmoto.fr</span>
+                <span className="hover:text-racing-red transition-colors cursor-pointer">contact@speedmotopieces.com</span>
               </li>
             </ul>
           </div>

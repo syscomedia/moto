@@ -99,7 +99,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     return {
       title: `${category.name} – SPEED MOTO PIECES`,
       description: category.description,
-      alternates: { canonical: `https://speedmoto.fr/categories/${slug}` },
+      alternates: { canonical: `https://speedmotopieces.com/categories/${slug}` },
     };
   }
 
@@ -107,11 +107,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title: meta.title,
     description: meta.description,
     keywords: meta.keywords,
-    alternates: { canonical: `https://speedmoto.fr/categories/${slug}` },
+    alternates: { canonical: `https://speedmotopieces.com/categories/${slug}` },
     openGraph: {
       title: meta.title,
       description: meta.description,
-      url: `https://speedmoto.fr/categories/${slug}`,
+      url: `https://speedmotopieces.com/categories/${slug}`,
       images: [{ url: category.image, alt: category.name }],
     },
   };
@@ -127,7 +127,7 @@ export default async function CategoryPage({ params }: PageProps) {
     "@type": "CollectionPage",
     name: category!.name,
     description: category!.description,
-    url: `https://speedmoto.fr/categories/${slug}`,
+    url: `https://speedmotopieces.com/categories/${slug}`,
     provider: {
       "@type": "LocalBusiness",
       name: "SPEED MOTO PIECES",

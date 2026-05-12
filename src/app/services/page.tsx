@@ -33,13 +33,13 @@ export const metadata: Metadata = {
     "freinage moto",
   ],
   alternates: {
-    canonical: "https://speedmoto.fr/services",
+    canonical: "https://speedmotopieces.com/services",
   },
   openGraph: {
     title: "Services Moto & Scooter – Pièces, Atelier, Export | SPEED MOTO PIECES",
     description:
       "Stock de pièces moto et scooter toutes marques. Atelier entretien à Épinay-sur-Seine (93). Export scooter occasion avec carte grise ou RSV.",
-    url: "https://speedmoto.fr/services",
+    url: "https://speedmotopieces.com/services",
   },
 };
 

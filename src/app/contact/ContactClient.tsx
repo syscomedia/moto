@@ -94,7 +94,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <p className="text-[8px] md:text-[10px] font-black uppercase tracking-[0.3em] text-white/40 mb-1">Adresse e-mail</p>
-                    <p className="text-white font-bold text-base md:text-lg">contact@speedmoto.fr</p>
+                    <p className="text-white font-bold text-base md:text-lg">contact@speedmotopieces.com</p>
                   </div>
                 </div>
               </div>
@@ -208,8 +208,8 @@ export default function ContactPage() {
                               setIsDropdownOpen(false);
                             }}
                             className={`w-full text-left px-5 py-3 rounded-xl text-sm font-bold transition-all duration-300 ${selectedSubject === subject
-                                ? 'bg-racing-red text-white'
-                                : 'text-white/60 hover:bg-white/5 hover:text-white'
+                              ? 'bg-racing-red text-white'
+                              : 'text-white/60 hover:bg-white/5 hover:text-white'
                               }`}
                           >
                             {subject}

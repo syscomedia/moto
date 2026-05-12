@@ -15,13 +15,13 @@ export const metadata: Metadata = {
     "contact atelier scooter 93",
   ],
   alternates: {
-    canonical: "https://speedmoto.fr/contact",
+    canonical: "https://speedmotopieces.com/contact",
   },
   openGraph: {
     title: "Contact SPEED MOTO PIECES – Épinay-sur-Seine 93",
     description:
       "Contactez notre équipe pour un devis pièces moto, entretien ou achat de véhicule. 33 Route de Saint-Leu, Épinay-sur-Seine. Tél : 07 59 75 42 75.",
-    url: "https://speedmoto.fr/contact",
+    url: "https://speedmotopieces.com/contact",
   },
 };
 
