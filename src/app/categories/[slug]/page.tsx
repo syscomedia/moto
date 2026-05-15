@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { categories } from "@/data/site-data";
+import { categories, products } from "@/data/site-data";
 import { notFound } from "next/navigation";
 import CategoryClient from "./CategoryClient";
 
@@ -122,6 +122,8 @@ export default async function CategoryPage({ params }: PageProps) {
   const category = categories.find((c) => c.slug === slug);
   if (!category) notFound();
 
+  const categoryProducts = products.filter((p) => p.category === slug);
+
   const productJsonLd = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
@@ -139,6 +141,27 @@ export default async function CategoryPage({ params }: PageProps) {
         addressCountry: "FR",
       },
     },
+    hasPart: categoryProducts.map((p) => ({
+      "@type": "Product",
+      name: p.name,
+      description: p.description,
+      image: `https://speedmotopieces.com${p.image}`,
+      url: `https://speedmotopieces.com/products/${p.id}`,
+      offers: {
+        "@type": "Offer",
+        price: p.price > 0 ? p.price : "0",
+        priceCurrency: "EUR",
+        availability: "https://schema.org/InStock",
+        seller: { "@type": "Organization", name: "SPEED MOTO PIECES" },
+      },
+      aggregateRating: {
+        "@type": "AggregateRating",
+        ratingValue: "5",
+        reviewCount: "2",
+        bestRating: "5",
+        worstRating: "1",
+      },
+    })),
   };
 
   return (

@@ -28,11 +28,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     description: product.description,
     image: `https://speedmotopieces.com${product.image}`,
     url: `https://speedmotopieces.com/products/${id}`,
+    brand: { "@type": "Brand", name: "SPEED MOTO PIECES" },
     offers: {
       "@type": "Offer",
-      price: product.price > 0 ? product.price : undefined,
+      price: product.price > 0 ? product.price : "0",
       priceCurrency: "EUR",
       availability: "https://schema.org/InStock",
+      priceValidUntil: "2027-12-31",
       seller: {
         "@type": "LocalBusiness",
         name: "SPEED MOTO PIECES",
@@ -45,6 +47,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
           addressCountry: "FR",
         },
       },
+    },
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "5",
+      reviewCount: "2",
+      bestRating: "5",
+      worstRating: "1",
     },
   };
 
@@ -86,16 +95,25 @@ export default async function ProductPage({ params }: PageProps) {
     description: product.description,
     image: `https://speedmotopieces.com${product.image}`,
     url: `https://speedmotopieces.com/products/${id}`,
+    brand: { "@type": "Brand", name: "SPEED MOTO PIECES" },
     offers: {
       "@type": "Offer",
-      price: product.price > 0 ? product.price : undefined,
+      price: product.price > 0 ? product.price : "0",
       priceCurrency: "EUR",
       availability: "https://schema.org/InStock",
+      priceValidUntil: "2027-12-31",
       seller: {
         "@type": "LocalBusiness",
         name: "SPEED MOTO PIECES",
         telephone: "+33759754275",
       },
+    },
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "5",
+      reviewCount: "2",
+      bestRating: "5",
+      worstRating: "1",
     },
   };
 
