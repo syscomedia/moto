@@ -147,11 +147,31 @@ export default async function CategoryPage({ params }: PageProps) {
       description: p.description,
       image: `https://speedmotopieces.com${p.image}`,
       url: `https://speedmotopieces.com/products/${p.id}`,
+      brand: { "@type": "Brand", name: "SPEED MOTO PIECES", url: "https://speedmotopieces.com" },
       offers: {
         "@type": "Offer",
         price: p.price > 0 ? p.price : "0",
         priceCurrency: "EUR",
         availability: "https://schema.org/InStock",
+        priceValidUntil: "2027-12-31",
+        hasMerchantReturnPolicy: {
+          "@type": "MerchantReturnPolicy",
+          applicableCountry: "FR",
+          returnPolicyCategory: "https://schema.org/MerchantReturnFiniteReturnWindow",
+          merchantReturnDays: 14,
+          returnMethod: "https://schema.org/ReturnInStore",
+          returnFees: "https://schema.org/FreeReturn",
+        },
+        shippingDetails: {
+          "@type": "OfferShippingDetails",
+          shippingRate: { "@type": "MonetaryAmount", value: "0", currency: "EUR" },
+          shippingDestination: { "@type": "DefinedRegion", addressCountry: "FR" },
+          deliveryTime: {
+            "@type": "ShippingDeliveryTime",
+            handlingTime: { "@type": "QuantitativeValue", minValue: 0, maxValue: 1, unitCode: "DAY" },
+            transitTime: { "@type": "QuantitativeValue", minValue: 1, maxValue: 3, unitCode: "DAY" },
+          },
+        },
         seller: { "@type": "Organization", name: "SPEED MOTO PIECES" },
       },
       aggregateRating: {
